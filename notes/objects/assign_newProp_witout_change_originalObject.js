@@ -22,4 +22,3 @@ const newRobot = Object.assign({laserBlaster: true, voiceRecognition: true}, rob
 
 
 console.log(newRobot);
-
