@@ -1,0 +1,7 @@
+[submodule "lib/ScreepsAutocomplete"]
+	path = lib/ScreepsAutocomplete
+	url = https://github.com/Garethp/ScreepsAutocomplete.git
+[submodule "lib/Traveller"]
+	path = lib/Traveller
+	url = https://github.com/bonzaiferroni/Traveler.git
+
