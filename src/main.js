@@ -1,4 +1,5 @@
 "use strict";
+
 function wrapLoop(fn) {
     let memory,
         tick;
@@ -26,5 +27,32 @@ function wrapLoop(fn) {
         RawMemory._parsed = Memory;
     };
 }
+
+function validatePath(path) {
+    let mod;
+    try {
+        mod = require(path);
+    }
+    catch (e) {
+        if (!(e.message && e.message.startsWith('Unknown module'))) {
+            console.log('<font style="color:FireBrick">Error loading ' + path
+                + ' caused by ' + (e.stack || e.toString()) + '</font>');
+        }
+        mod = null;
+    }
+    return mod != null;
+}
+function getPath(modName, reevaluate = false) {
+    if (reevaluate || !Memory.modules[modName]) {
+        // find base file
+        Memory.modules[modName] = './overrides.' + modName;
+        // find viral file
+    }
+    return Memory.modules[modName];
+}
+
+
+
+
 
 
