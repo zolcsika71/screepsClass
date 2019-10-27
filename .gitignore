@@ -3,6 +3,12 @@ screeps.json
 dist/
 pack/
 pub/
+/gruntfile.js
+/package.json
+/package-lock.json
+notes/
+temp/
+lib/
 
 
 ### Dreamweaver template
@@ -203,8 +209,9 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
-/gruntfile.js
+[/gruntfile.js
 /package.json
 /package-lock.json
-notes/classes/
+notes/
 temp/
+lib/]
