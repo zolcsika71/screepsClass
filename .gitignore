@@ -6,8 +6,6 @@ pub/
 /gruntfile.js
 /package.json
 /package-lock.json
-notes/
-temp/
 lib/
 
 
