@@ -1,8 +1,9 @@
 
 let mod = {};
-mod.init = () => {
+mod.init = (withDelete = false) => {
 
-    delete Memory;
+    if (withDelete)
+        delete Memory;
 
     Memory.modules = {};
 
