@@ -81,7 +81,6 @@ function tryRequire(path, silent = false) {
 function inject(base, alien, namespace) {
     let keys = _.keys(alien);
     for (const key of keys) {
-        if (typeof alien[key] === "function")
             if (typeof alien[key] === "function") {
             if (namespace) {
                 let original = base[key];
