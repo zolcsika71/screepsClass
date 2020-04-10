@@ -1,4 +1,6 @@
-"use strict";
+const
+    MAIN_LOOP = require('mainLoop');
+
 
 function wrapLoop(fn) {
     let memory,
@@ -27,3 +29,14 @@ function wrapLoop(fn) {
         RawMemory._parsed = Memory;
     };
 }
+
+
+
+module.exports.loop = wrapLoop(function () {
+    MAIN_LOOP.run();
+
+});
+
+
+
+
